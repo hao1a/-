@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>学生管理系统</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到主内容</a>
+  <div id="app">
+    <section id="login-view" class="login-view">
+      <div class="login-panel">
+        <div class="login-brand">
+          <span class="brand-mark">学</span>
+          <div>
+            <h1>学生管理系统</h1>
+            <p>登录后查询与管理学生信息</p>
+          </div>
+        </div>
+        <form id="login-form" autocomplete="off">
+          <label class="field">
+            <span>用户名</span>
+            <input id="login-username" type="text" autocomplete="username" required>
+          </label>
+          <label class="field">
+            <span>密码</span>
+            <input id="login-password" type="password" autocomplete="current-password" required>
+          </label>
+          <label class="remember-row">
+            <input id="login-remember" type="checkbox" checked>
+            <span>记住账号密码，下次自动填充</span>
+          </label>
+          <p id="login-error" class="form-error"></p>
+          <button class="btn btn-primary btn-block" type="submit" id="login-submit">
+            <i data-lucide="log-in"></i>登录
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main-view" class="main-view hidden">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-mark">学</span>
+          <div>
+            <strong>学生管理系统</strong>
+            <small>本地数据 · 登录使用</small>
+          </div>
+        </div>
+        <nav class="nav">
+          <button class="nav-item active" data-page="dashboard"><i data-lucide="layout-dashboard"></i>数据看板</button>
+          <button class="nav-item" data-page="students"><i data-lucide="users"></i>学生管理</button>
+          <button class="nav-item" data-page="grades"><i data-lucide="graduation-cap"></i>成绩与综测</button>
+          <button class="nav-item" data-page="attendance"><i data-lucide="calendar-check"></i>考勤管理</button>
+          <button class="nav-item" data-page="discipline"><i data-lucide="shield-alert"></i>处分记录</button>
+          <button class="nav-item" data-page="rewards"><i data-lucide="award"></i>奖励记录</button>
+          <button class="nav-item" data-page="logs"><i data-lucide="scroll-text"></i>操作日志</button>
+          <button class="nav-item" data-page="settings"><i data-lucide="settings"></i>账号与设置</button>
+        </nav>
+        <div class="sidebar-user">
+          <div class="user-chip">
+            <span class="user-avatar" id="current-user-avatar">管</span>
+            <div>
+              <strong id="current-user-name">管理员</strong>
+              <small id="current-user-username">admin</small>
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-block" id="logout-btn"><i data-lucide="log-out"></i>退出登录</button>
+        </div>
+      </aside>
+      <main id="content" class="content"></main>
+    </section>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+  <div id="loading-overlay" class="loading-overlay hidden"><div class="spinner"></div></div>
+
+  <script src="vendor/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
