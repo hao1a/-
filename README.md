@@ -2,13 +2,16 @@
 
 一、登录模块
 
-系统设有独立登录窗口，管理员输入用户名、密码完成身份校验，支持记住账号密码自动填充，登录后方可访问全部业务功能。当前登录账号为 admin 管理员账号。
+系统设有独立登录窗口，管理员输入用户名、密码完成身份校验，支持记住账号密码自动填充，登录后方可访问全部业务功能。当前默认登录账号为 admin 管理员账号。
+<img width="1794" height="1123" alt="登录页" src="https://github.com/user-attachments/assets/4e0c57da-5c73-4451-b482-23840c9c89e9" />
 
 二、功能模块总览（左侧导航菜单）
 
 数据看板
 
 系统可视化首页，汇总全校学生核心统计数据：在读总人数、班级总数、男女分布、政治面貌、学籍状态分布；展示各班在读人数占比条形图，直观呈现班级学情数据，支持一键刷新统计信息。
+<img width="1794" height="1123" alt="数据看板页" src="https://github.com/user-attachments/assets/e164e6db-d168-4653-aec9-ab80b227eea4" />
+
 
 学生管理
 
@@ -19,32 +22,41 @@
 提供多条件筛选：姓名 / 学号 / 身份证检索、班级筛选、学籍状态、归档状态过滤；
 
 功能按钮：新增学生、Excel 模板导入导出、批量归档、批量删除；单条学生信息支持查看、编辑、归档、删除操作。
+<img width="1794" height="1123" alt="学生管理页" src="https://github.com/user-attachments/assets/c503b892-091d-4709-a56b-1b38b549b488" />
+<img width="1794" height="1123" alt="新增学生页" src="https://github.com/user-attachments/assets/860d7842-1636-4e7d-b07f-70013a1b4b54" />
 
 成绩与综测
 
 管理学期成绩、学年综合测评数据。
 
 支持按学期 / 学年筛选检索，提供成绩模板、综测模板下载，可批量导入、导出成绩与综测数据；支持手动新增汇总、新增综测记录，数据按学期、学年分层展示。
+<img width="1794" height="1123" alt="成绩与综测" src="https://github.com/user-attachments/assets/c84bbff2-ff6f-4923-a286-d8b4947efeff" />
 
 考勤管理
 
 统计学生日常考勤情况，区分旷课、迟到、早迟记录；
 
 可按学期查询学生考勤，展示个人学时累计统计与考勤明细；支持考勤模板下载、导入、导出，新增考勤、批量删除记录。
+<img width="1794" height="1123" alt="考勤管理页" src="https://github.com/user-attachments/assets/55e5525f-dc12-46bf-abc9-442fec491129" />
+<img width="1794" height="1123" alt="新增考勤管理页" src="https://github.com/user-attachments/assets/898f9f57-aa89-488d-a3cb-7b7cff5257df" />
 
 处分记录
 
 登记学生违纪处分信息，记录处分类型、事由、下达时间、处分状态、撤销时间；
 
 支持学生关键词检索、处分类型与状态筛选，配套模板导入导出、新增处分功能。
+<img width="1794" height="1123" alt="学生处分管理页" src="https://github.com/user-attachments/assets/b73b5f43-9bda-4f0a-8485-e758ae8cfc14" />
+<img width="1794" height="1123" alt="新增学生处分页" src="https://github.com/user-attachments/assets/5cf6150d-584d-4f4d-a6f2-344634304f15" />
 
 奖励记录
 
 收录学生各类获奖信息，登记奖项名称、颁发单位、获奖时间；
 
 通过学生姓名、奖项名称快速查询，支持 Excel 批量导入导出、新增奖励记录。
+<img width="1794" height="1123" alt="奖励记录页" src="https://github.com/user-attachments/assets/a7c1798d-b384-478f-be81-3f6d46e689dd" />
 
 操作日志（界面可见菜单，用于追溯系统操作行为）
+<img width="1794" height="1123" alt="日志" src="https://github.com/user-attachments/assets/98d0a0f9-1140-40be-a0f0-2d85de57fc1a" />
 
 账号与设置
 
@@ -53,6 +65,7 @@
 登录账号管理：新增管理员账号、编辑 / 删除账号、修改登录密码；
 
 学籍状态配置：自定义在读、休学、退学、毕业等学籍类型，设置统计规则（是否计入总人数）。
+<img width="1794" height="1123" alt="设置" src="https://github.com/user-attachments/assets/b2691037-309e-4c5d-82bf-ab3ed0e53fd5" />
 
 页面左下角常驻显示当前登录管理员信息，提供退出登录功能。
 
